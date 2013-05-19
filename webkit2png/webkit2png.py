@@ -131,7 +131,7 @@ sys.exit(app.exec_())
         # QApplication.processEvents may be called, causing
         # this method to get called while it has not returned yet.
         helper = _WebkitRendererHelper(self)
-        helper._window.resize( self.width, self.height )
+        helper._window.resize(self.width, self.height)
         image = helper.render(url)
 
         # Bind helper instance to this image to prevent the
