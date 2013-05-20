@@ -199,7 +199,7 @@ if __name__ == '__main__':
             renderer.render_to_file(url=options.url, file_object=options.output)
             options.output.close()
             QApplication.exit(0)
-        except RuntimeError, e:
+        except RuntimeError as e:
             logger.error("main: %s" % e)
             print >> sys.stderr, e
             QApplication.exit(1)
